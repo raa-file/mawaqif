@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مواقف تصنع القيم</title>
+<meta name="description" content="مبادرة مواقف تصنع القيم — نتعلم القيمة، ونعيش أثرها">
+<meta name="theme-color" content="#1E5A47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="مواقف تصنع القيم">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAABmJLR0QA/wD/AP+gvaeTAAAQaUlEQVR4nO3dd3QU5d7A8d/M7G7q7qY30klCaApRQIo0FQEpSkAQ8VJUEK/tHK/nfcX7IsgV7rXcK00UKV6lCoauCCQgLUAkhJpGKkk2dZNtZMvMzvtHOIAkz+4m2Tbh9/kLs09mnwNfZ2dnn5mlomc+Cwi1hXb1BJD7wjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORCRy9QQeOhKGeqmn57hYj2gZw/OQq2R/Lmw+XGLkeVfPrBWMw6l8JdSap2S9Au/9tT8SLHokWDoo3PDJGa3ZhTNrC76sONW7KT73l3HX+DiPSQmezp+PZRiH83iLqXFxEtKjU3t4OHMytsA4nCdWxkgYivRogr9I5Gb/Gm42nS5NTBPLAAAagKYsDXC+LnVASlNUfFRUr+4J4cFBIf4BDMMAQLNeX1VXV1FTfTk/X6lSdfIpQv0Cnuj9aPduUdGhYT6e3gDAsmyVsq68RpGVdz2vrNhMftdRqeV4HkgB1OjMRs693rF0kThCAwLHPTls1KAnZD4+FoaVVlUeyzyXfv6c3mBo1/Z9vLyeHzZ6yvCne0TFWBimVKv2nj6+Pf1XRUNd60frm82Xak0poeI2f/doqbFdU3ICSuhfAOjt5fXy+OfGDhtG07a+RDbr9XvS0/dmpJtY1upgD7Fk7vjJc8c+7+PlZeP2WY7bmXF4Vdo2XXPzAw91l4u+e1bmK3lw71Gq4ub9ptIa3WvPIew4esV3/2DuPD+ZtAO/q6ivW7t9+/WbNy2MGdSr79K5CyODwzqw/dom5ftrv7xUmPvAz+PkzP8M9E0JvbPP5ng4UmL8z0Vtk8G9ygBBx/HUoCfeeHG6SMR0eAscZ/7hwP4DJ47zrQ4UKIqaO27yu1NnMTbvkFozmkwfb/76wNnfWz8U6kN3lzNGMxQ0smr3y6IFI++b4Oo5dMSTKSlvz5rFMJ16t0XTVP/k5AC5/I/r1//0c4r6ZN6b88a/0Mm3DwzDjE4ZVFRZUVR164GHdCb+lsZcpTUbuM48g2MJMo7kuPgPX3u9k2Xc1T0qSu4rzc690fKfFEUtnr0gdcQzdtk4RVGj+g84l3u1Rtlglw06k/Di8BBLPn5zodzX147bTIiONvN8y/HHm89PnzN2sh03zjDMY0m90k4eYzk33ku0RXhxvDJxwuO9+9h9s70TEvKKi+PDI5fOfZOy98koP18pQzPnblyx72YdTWAHpHJf6folSyTitk8VdJJKq4mXRgTI5I7YuN5oGPO3BUq12hEbdxCBnT5/bsRwB5UBAHJfqYPKAABPicfLT09w0MYdRGBxjHh8gKun0HGTho5w9RTaR0hxdAsJDgkIcPUsOi48MDg6JNzVs2gHIcXRN6mHq6fQWYN69XX1FNpBSHFEhISQHjKx7Nc7dhw62ca5SGfadvTQks3rjCYTaUBsWIQz59NJQvpUNlDuR3qooqb6aOZZiqISo2OSYmOdOKl7rhQVrNi2ief5GU+NTY6Oa3NMsL+/k2fVGULac1j4OD42olvv7gk8z6/fvcvCigrHMfP8iq0beZ7vl5jcIyqWNCxASuzbDQkpDiP5E3aKol6dMoWm6aJbt45fOO/MWbXYczL9anEhTVEfzpxn4Ryawdi+dSSuJaQ4LK/QiYuMfGbwYAD4cf8BXfNtZ00KAEDX3Lx6zzYAmDZyTO84S2ecdfoHV3i4MyHF0ai2sshv1nMTpT4+Kq3mp8O/OWdKLVbv2V7f1CTz8XlrykzLIxvUTc6Zkl0IKY7iWxWWB/j6eM8YOw4ADp36vUyhcMqkoKiqYkf6YQB4e8rL/lIry45ulBY7ZVL2IaQ4im6VWx0zdtiw2IhuHGfelPazE6YEAJ9t38RybEK3qGkjrX/Kf6O0yAlTshchxXGrurrB2vJxmqZfS00FgCsFBecuX3b0lI7+kXnmag5FUX//y3wRY2VNWm2TskRR6egp2ZGQ4jDzfGZOjtVhvRMShvbvDwAb9+zRGx24pPu2vvmzbZsBYNzAoY/36G11/K/nTrvkbXaHCSkOADh9KduWYa9OSfX28qpvVP50+FfHTWbt3p0KZb23p+f7L82xZfzhC2ccNxlHEFgc+SUl+SUlVof5y2QvPjsWAPafOF5a5ZA9eWFl+dajvwDAO1NmhvpZ/zjwSlHB1eJCR8zEcQQWBwDsyUi3ZdiE4SPiIiM5zrx+167Wi8s7ief5pd9/w3JsUmT0jKfG2fIr3x7Ybd85OIHw4rhw9aotOwOGoRdOn0FTVG5xcYa9z5mmnUzPKcyjKerjOQutHocCQG5Z8cnLF+07BycQXhw8z9u4M0iMjn568BAA+H7fXpVWa68JNGk1X+3+EQCmjRzzaIL1VQQ8z3+6ZYPd915OILw4ACC3uPhE1gVbRr4ycZLcV6rV3d5yYL+9nv2LHd83ajQBMvm7U2fZMn7PqYycwjx7PbszCTIOAPjvvn1Nao3VYb7eXrMnTwKA9PPnLV/5aKPsgtx9Z04AwAcz5li+aLtFXVPjf3b90PnndQmhxqHSaldu3WLLaYORAwb2SbjzaT7LdurKERPLLv1+Hc/zA5J7Txg83Op4M88v2rCqUWM9Yvck1DgAICcvd39GhtVhFEUtmPaiWCQqVyh+PnakM8/43cGfi6oqJGLx4tlv2HJty+Zf9mZec/hZWscRcBwAsOXQwWuF1k8eRIaFpT7zDADsPnqkvKMfyJUoKjccSgOABROnxYV3szr+/I2rq9O2d+y53ISw4+A47l+bN1bWtnGnlAekPj0mOjycZbm1O7abze2+p6OZ5xdv+tpoMiVFRs8b/7zV8bdqq/+27guWs37/D3cm7DgAQKu7veK7b7Q6K6t7RCLmrZdm0jRdUFp6+PTp9j7LtqOHLhXm0hS1ePYbYpGVhbdNWs0bX/5DuIcadwk+DgCorK1btv4bq3dySoyJGTfsSQD48cD+dl3zXq2sW5W2DQBmjZnYLzHZ8mBdc/MbXy4rq6myfftuqyvEAQAFpaVL162z+hnsK5MmhgYG6Y3G9T/tsn3j//hhw229Pjww+K0XplseqTca3lq5/FqJHd4zu4MuEgcA5JUUf75po4klXjMCAB5iyfxp0wAgO/fGqYt/2LLZA2d/P5GTBQBL5iz09rR0WzC90fj2qn9m5V23MEZYuk4cAJCdm/vJunWWX19SevYcOWAAAGxMS1PrdJY3qFSrP9u+CQAmDx01tG8/CyObDfq3Vy4X9BvX1rpUHABw7ebNxWtWayz+q897YYrcV6rSar/bZeXF5dMf1zdqNP5S6fvTZ1sYptbpXvt8aeZ1gd1+w6quFgcAFJaXL16zxsL9aKU+Pq9NTQWA05eyz14mLi07fOHMb1lnAeDvf1kQIJORhlU3NsxZ8dHlm/mdm7U76oJxAEBpVeUHX35RUkFcrT6sf8qQfv0A4NudO1WaNm6oolSrl2/ZAADjBw17dsAQ0nYKK8tnLVtUUGF95bMQdc04AECpUn20amX2jRukAQtenC6XytQ63bqdO1s/uuyHb5VqVYBM9r8vv0raQub1K698uqhaaf0UnEAJ755gtmM57kzOJR8vr6SY2NaPekgk4cHBp7OzK2trI0JCYiIiACDQUwYAhzJPtizcWv76O30IV7BtOXLwow2r9YK6vLG9unIcAMDzfHZurqKutn/PXq2XbEWGhirqassUiqsFhSMGDPD29Az0lNU1Nf515XKD0fjc4OELJk1rvU290bhk89cbDu0x8+721Up21sXjaFGmUJy7crlvYlLrG1Q+kpT0e1aWSqutqq0b/thjgZ6yRetX5ZaVBPv5r33vI0/Jg9+dU1ZTNf/zJWe61ltWkociDgDQ6HTHsy5EhIREhf3pRuYSsTg8OPhUdnZVXW1oYGBFdXXLR68r5r/bMyb+gY2cyMla+O9PFQ31zpu3Sz0scQAAy3GZOTna27cfTUqm7/tenG4hoTUN9aVVVdduFpy5mmM0mSYNHfn6hNT7f5czm7/Z99Oy/35rMLndF184zkMUR4uCsrK8kuKUnsmeHve+U61PQtLJP7JUWp3RZAr1C1jz3iKP+15QGlRN76z+595TGcJbItw5ArtJrb3IfX0XznhpUN97t2+rrK0rLC8L9wroE59w/527Tl+59H+b1tQ1Nbpimi72kMbRYtTAga9PneZ13y4kUR559896o+Gr3Vu3HDnoiqm5hYfuZeV+pZWVpy5e7B4dFex/53rGlvMcAHClqGD+F8tOXRHelUh29FDHAQC65uYTWVlGk7FvQiJFU2rjbRpg62+HPly/qlHT2W8LFLoue/rcdmaz+Vhmphl4AGB5tkrXsPGXNKEv/7QLjAMAIDQo6O75UxHDhAYFuXY+bgLjAAB44CIUu3/fikBhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIhISF9XbheeDBXiQwd5UXIPWiqhpGJaKqFC/A3yimPQsm6UEc2INdTKvTVGXm3ktSazymCub+ZrdWY993Bd1tSVr1sR0VScnImXM7FyJkbGxMjoMB9GKun4EkCNka/WcWVqc5maK1WzxU3mEhXHmrtsMV1tzxEppfuFiPsGiZIDRAl+IrH1L8ppB6mEkkpEif73fmLk+JtNXF4Dd7Wezak1VWo7deN9d9MV9hxBXvTgCPHAMEn/MFGIlyuPomqbzZdqTOcVpswqY0Oz4PcoAo6jR4BodLRkaDdxop+ow8vFWTPfzIKB46VSP4ZhAIDjOI2myYOhvESUqKOl8TwUNHJnq4wZ5cZ8pVAvgRFeHLFyZkK8x+hoj0iprf90Bg7K1Gy52lyu5ur1XI2Or71tbtLzGqP5Nnvn/2+5r3TMkCEAcOTsWZX2zm3LvUWUVEL7eVIh3nSoDxXsxURJmRgZHS0Tedj8glWhMWeUGw4WG0pVAnvREVgcA8PFX42SimgrOwq1gb/WwOYr2Xwlm6fkFDrOvt+wRgOE+zI9ApgeAaLkAFGfIJHV41zWzL93XHNBYekGy+5GYAekqYmepDJUBnNWNZtdY8qpNRU3cQ69XZcZoFLLVWq5jHIjANAA8X5M/1BxSoh4QJhY5tHGDEU0lZroiXE4UOujvHwle6rCdLbKmNvAuuo0hBngZhN3s4nbla9nKOgdJBoSIRkWKU7y/9Nfr+AOUQX2suLvSS1/UtovRJyvZDPKjRnlhgqN+97SL0rKjI6RjIqS9AgQ5dSaFp3SNOqF1IfA4kDOhJ+tICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BEGAciwjgQEcaBiDAORIRxICKMAxFhHIgI40BE/w/UWMAMq691kgAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4EE; --card:#FFFFFF; --ink:#1B2B25; --muted:#53635C; --line:#E4E0D4;
+  --green:#1E5A47; --green-2:#2E7A60; --mint:#E3F2EA; --mint-2:#CDEBD9;
+  --gold:#E8B65A; --gold-soft:#FBF1DC; --red:#B4473A; --red-soft:#FBE9E6;
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+.wrap{max-width:760px;margin:0 auto;padding:16px 16px 110px}
+header.top{display:flex;align-items:center;gap:12px;padding:8px 0 16px}
+header.top img{width:44px;height:44px;border-radius:12px}
+header.top h1{margin:0;font-size:20px;line-height:1.3;color:var(--green)}
+header.top p{margin:0;font-size:13px;color:var(--muted)}
+header.top .who{margin-inline-start:auto;font-size:13px;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;display:flex;gap:8px;align-items:center}
+header.top .who button{border:0;background:none;color:var(--green);font-weight:600;padding:0}
+h2{font-size:22px;margin:8px 0 4px;color:var(--green)}
+.sub{margin:0 0 16px;color:var(--muted);font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+.chip{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--mint);color:var(--green)}
+.chip.gold{background:var(--gold-soft);color:#7A5A16}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 20px;border-radius:14px;border:0;background:var(--green);color:#fff;font-weight:600}
+.btn:hover{background:var(--green-2)}
+.btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn.ghost:hover{background:var(--mint)}
+.btn.small{min-height:38px;padding:6px 14px;font-size:14px;border-radius:10px}
+.btn.danger{background:transparent;color:var(--red);border:1.5px solid var(--red)}
+.btn:disabled{opacity:.5;cursor:default}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:14px;font-weight:600}
+.field input,.field select,.field textarea{border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;min-height:46px}
+.field textarea{min-height:80px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* Hero / login */
+.hero{text-align:center;padding:40px 8px 8px}
+.hero img{width:112px;height:112px;border-radius:28px;box-shadow:0 16px 36px rgba(30,90,71,.2)}
+.hero h1{font-size:32px;color:var(--green);margin:20px 0 4px}
+.hero .motto{font-size:18px;color:var(--muted);margin:0 0 28px}
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0;text-align:start}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.steps b{display:block;color:var(--green);font-size:15px}
+.steps span{font-size:13px;color:var(--muted)}
+
+/* Situations */
+.sit-title{font-size:19px;margin:10px 0 6px}
+.sit-text{margin:0 0 16px;font-size:16px}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{text-align:start;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:12px 16px;min-height:50px;font-size:15px}
+.opt:hover:not(:disabled){border-color:var(--green);background:var(--mint)}
+.opt.best{border-color:var(--green);background:var(--mint)}
+.opt.picked-wrong{border-color:var(--red);background:var(--red-soft)}
+.opt:disabled{cursor:default}
+.feedback{margin-top:16px;padding:16px;border-radius:14px;background:var(--bg)}
+.feedback .verdict{font-weight:700;margin-bottom:4px}
+.feedback .verdict.ok{color:var(--green)}
+.feedback .verdict.no{color:var(--red)}
+.ref{margin:12px 0 0;padding:12px 14px;border-inline-start:4px solid var(--gold);background:var(--gold-soft);border-radius:10px;font-size:15px}
+.step{margin-top:12px;display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.step b{color:var(--green);white-space:nowrap}
+.toggle-row{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.toggle-row button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;min-height:40px;font-size:14px}
+.toggle-row button[aria-pressed="true"]{background:var(--green);color:#fff;border-color:var(--green)}
+.empty{text-align:center;color:var(--muted);padding:32px 12px}
+
+/* Challenge */
+.values-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.val-card{border:1.5px solid var(--line);background:#fff;border-radius:16px;padding:16px;text-align:start;min-height:110px}
+.val-card:hover{border-color:var(--green);background:var(--mint)}
+.val-card b{display:block;font-size:17px;color:var(--green);margin-bottom:4px}
+.val-card span{font-size:13px;color:var(--muted)}
+.days{display:flex;gap:8px;margin:18px 0;flex-wrap:wrap}
+.day{width:44px;height:44px;border-radius:50%;border:2px dashed var(--mint-2);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+.day.done{background:var(--green);border:2px solid var(--green);color:#fff}
+.progress{height:10px;background:var(--mint);border-radius:999px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--green);border-radius:999px;transition:width .4s}
+
+/* Badges */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.stat b{display:block;font-size:26px;color:var(--green);line-height:1.2}
+.stat span{font-size:13px;color:var(--muted)}
+.badges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.badge{text-align:center;padding:14px 8px;border-radius:16px;border:1px solid var(--line);background:#fff}
+.badge .medal{width:56px;height:56px;margin:0 auto 8px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--bg)}
+.badge.on .medal{background:var(--green)}
+.badge b{display:block;font-size:14px}
+.badge span{font-size:12px;color:var(--muted)}
+.badge:not(.on){opacity:.55}
+
+/* Class */
+.bars{display:flex;flex-direction:column;gap:12px}
+.bar-row{display:grid;grid-template-columns:96px 1fr 40px;gap:10px;align-items:center;font-size:14px}
+.bar{height:14px;background:var(--mint);border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green);border-radius:999px}
+.bar-row.top .bar i{background:var(--gold)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:start;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600;font-size:13px}
+.table-box{overflow-x:auto}
+
+/* Teacher */
+.opt-edit{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;background:var(--bg)}
+.opt-edit .row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.opt-edit .row input[type=text]{flex:1}
+.opt-edit label.best{display:flex;align-items:center;gap:6px;font-size:13px;white-space:nowrap}
+.list-item{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}
+.list-item:last-child{border-bottom:0}
+.list-item small{color:var(--muted)}
+.row-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Nav */
+nav.tabs{position:fixed;bottom:0;inset-inline:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:6px 8px calc(6px + env(safe-area-inset-bottom))}
+nav.tabs .in{max-width:760px;margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+nav.tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;min-height:56px;border-radius:12px;font-size:12px;color:var(--muted)}
+nav.tabs button svg{width:24px;height:24px}
+nav.tabs button[aria-current="page"]{color:var(--green);background:var(--mint);font-weight:700}
+
+.toast{position:fixed;top:16px;inset-inline:16px;max-width:420px;margin:0 auto;background:var(--green);color:#fff;padding:14px 18px;border-radius:14px;text-align:center;font-weight:600;box-shadow:0 12px 30px rgba(0,0,0,.18);transform:translateY(-140%);transition:transform .35s;z-index:20}
+.toast.show{transform:translateY(0)}
+.hidden{display:none!important}
+@media (max-width:480px){
+  .steps,.values-grid{grid-template-columns:minmax(0,1fr)}
+  .badges{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero h1{font-size:27px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ===== Login ===== -->
+<main id="login" class="wrap hidden">
+  <section class="hero">
+    <img src="data:image/png;base64,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" alt="">
+    <h1>مواقف تصنع القيم</h1>
+    <p class="motto">«نتعلم القيمة، ونعيش أثرها»</p>
+  </section>
+  <div class="steps">
+    <div><b>١. عيشي الموقف</b><span>مواقف يومية من حياتك في المدرسة والبيت.</span></div>
+    <div><b>٢. اختاري قرارك</b><span>واكتشفي القيمة الإسلامية التي يرتبط بها.</span></div>
+    <div><b>٣. تحدي التطبيق</b><span>قيمة تطبقينها خلال الأسبوع.</span></div>
+    <div><b>٤. سجل الأثر</b><span>أوسمة تجمعينها دون مشاركة أي موقف شخصي.</span></div>
+  </div>
+  <form class="card" id="loginForm">
+    <div class="field">
+      <label for="nameIn">اسمك</label>
+      <input id="nameIn" required maxlength="40" autocomplete="name" placeholder="مثال: سارة محمد">
+    </div>
+    <div class="field">
+      <label for="classIn">الفصل</label>
+      <input id="classIn" maxlength="20" placeholder="مثال: ٢/١">
+    </div>
+    <button class="btn" type="submit" style="width:100%">ابدئي الرحلة</button>
+  </form>
+</main>
+
+<!-- ===== App ===== -->
+<div id="app" class="hidden">
+  <div class="wrap">
+    <header class="top">
+      <img src="data:image/png;base64,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" alt="">
+      <div>
+        <h1>مواقف تصنع القيم</h1>
+        <p>نتعلم القيمة، ونعيش أثرها</p>
+      </div>
+      <div class="who"><span id="whoName"></span><button type="button" id="logoutBtn">تبديل</button></div>
+    </header>
+
+    <section id="v-situations"></section>
+    <section id="v-challenge" class="hidden"></section>
+    <section id="v-impact" class="hidden"></section>
+    <section id="v-class" class="hidden"></section>
+    <section id="v-teacher" class="hidden"></section>
+  </div>
+
+  <nav class="tabs" aria-label="أقسام الموقع">
+    <div class="in">
+      <button type="button" data-tab="situations" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>المواقف</button>
+      <button type="button" data-tab="challenge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V11"/><path d="M12 11C8 11 6 8 6 5c3 0 6 2 6 6z"/><path d="M12 13c0-4 3-6 6-6 0 3-2 6-6 6z"/><path d="M7 21h10"/></svg>التحدي</button>
+      <button type="button" data-tab="impact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>أثري</button>
+      <button type="button" data-tab="class">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>الفصل</button>
+      <button type="button" data-tab="teacher">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>المعلمة</button>
+    </div>
+  </nav>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- Values ---------- */
+const VALUES = {
+  'الصدق':        {actions:['أقول الحقيقة حتى لو كانت صعبة','أعترف بخطئي بهدوء','لا أبالغ في كلامي']},
+  'الأمانة':      {actions:['أعيد كل غرض ليس لي','أحافظ على أغراض المدرسة','أؤدي واجباتي بنفسي']},
+  'الرحمة':       {actions:['أساعد زميلة تحتاج عونًا','أرفق بالحيوان والصغير','أبتسم وأواسي من يحزن']},
+  'بر الوالدين':  {actions:['أساعد في عمل منزلي يوميًا','أستجيب لطلب والديّ فورًا','أدعو لوالديّ كل يوم']},
+  'التعاون':      {actions:['أشارك زميلاتي في عمل جماعي','أساعد في ترتيب الفصل','أشرح درسًا لزميلة']},
+  'الكلمة الطيبة':{actions:['أشكر من يساعدني','أبدأ بالسلام','أمدح عمل زميلة بصدق']}
+};
+const VALUE_NAMES = Object.keys(VALUES);
+const CHALLENGE_DAYS = 5;
+
+/* ---------- Default situations ---------- */
+const DEFAULT_SITUATIONS = [
+  {id:'s1',week:1,value:'الأمانة',title:'غرض ليس لكِ',
+   text:'وجدتِ مقلمة جميلة تحت طاولتك في الفصل، ولا تعرفين صاحبتها. ماذا ستفعلين؟',
+   options:[
+     {t:'آخذها فلا أحد سيعرف',best:false,fb:'ما ليس لنا يبقى أمانة عندنا وإن لم يرنا أحد، والله مطّلع على كل شيء.'},
+     {t:'أتركها مكانها',best:false,fb:'تركها لا يضر، لكنه لا يوصلها إلى صاحبتها، والأمانة تكون بالسعي لردّها.'},
+     {t:'أسلمها للمعلمة أو أسأل عن صاحبتها',best:true,fb:'أحسنتِ! هذا هو أداء الأمانة: أن يصل الحق إلى صاحبه.'}],
+   ref:'﴿إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا﴾ [النساء: ٥٨]',
+   step:'هذا الأسبوع: إذا وجدتِ أي غرض ضائع، سلّميه فورًا لصاحبته أو للمعلمة.'},
+  {id:'s2',week:1,value:'الصدق',title:'الواجب المنسي',
+   text:'نسيتِ حل الواجب، وسألتكِ المعلمة عنه أمام الفصل. ماذا ستقولين؟',
+   options:[
+     {t:'أقول إنني حللته ونسيت الدفتر في البيت',best:false,fb:'هذا عذر غير صادق، والكذب يُفقد الثقة حتى في الأمور الصغيرة.'},
+     {t:'أعترف بأنني نسيت، وأعد بحله اليوم',best:true,fb:'رائع! الصدق شجاعة، والاعتراف بالخطأ مع إصلاحه يرفع مكانتك.'},
+     {t:'أسكت ولا أجيب',best:false,fb:'السكوت هنا يهرب من المسؤولية، والصدق مع الوعد بالإصلاح أفضل.'}],
+   ref:'﴿يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ﴾ [التوبة: ١١٩]',
+   step:'هذا الأسبوع: إذا أخطأتِ في شيء، قولي «أخطأت وسأصلح» بدل البحث عن عذر.'},
+  {id:'s3',week:1,value:'الرحمة',title:'زميلة وحيدة',
+   text:'في وقت الفسحة، رأيتِ زميلة جديدة تجلس وحدها وتبدو حزينة. ماذا ستفعلين؟',
+   options:[
+     {t:'أدعوها لتجلس معنا',best:true,fb:'جميل! الرحمة تظهر في الأفعال الصغيرة التي تُشعر الآخرين بالأمان.'},
+     {t:'لا أتدخل، ربما تحب الجلوس وحدها',best:false,fb:'قد يكون ذلك، لكن سؤالًا لطيفًا أو دعوة لا تضر، وقد تعني لها الكثير.'},
+     {t:'أتحدث عنها مع صديقاتي',best:false,fb:'الحديث عنها لا يساعدها، وقد يجرح مشاعرها إن علمت.'}],
+   ref:'قال النبي ﷺ: «الراحمون يرحمهم الرحمن» [رواه أبو داود والترمذي]',
+   step:'هذا الأسبوع: ابحثي عن شخص يحتاج كلمة لطيفة أو مساعدة وقدّميها له.'},
+  {id:'s4',week:2,value:'بر الوالدين',title:'طلب أمي',
+   text:'كنتِ منشغلة بلعبة على الجوال، وطلبت منكِ أمك مساعدتها في ترتيب المائدة. ماذا ستفعلين؟',
+   options:[
+     {t:'أقول «لحظة» وأكمل اللعب',best:false,fb:'التأجيل المتكرر يُتعب الوالدين، والمبادرة من أجمل صور البر.'},
+     {t:'أترك اللعبة وأساعدها فورًا بابتسامة',best:true,fb:'ما أجمل ذلك! البر طاعة بلطف، والابتسامة جزء منه.'},
+     {t:'أساعدها وأنا متضايقة',best:false,fb:'المساعدة جيدة، لكن البر يكتمل بالكلمة الطيبة وعدم إظهار الضيق.'}],
+   ref:'﴿وَقَضَىٰ رَبُّكَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ وَبِالْوَالِدَيْنِ إِحْسَانًا﴾ [الإسراء: ٢٣]',
+   step:'هذا الأسبوع: بادري بمساعدة والديك في عمل واحد يوميًا قبل أن يطلبا.'},
+  {id:'s5',week:2,value:'التعاون',title:'المشروع الجماعي',
+   text:'في مشروع جماعي، لاحظتِ أن إحدى زميلاتك تجد صعوبة في الجزء الخاص بها. ماذا ستفعلين؟',
+   options:[
+     {t:'أنجز جزئي فقط، فهذه ليست مسؤوليتي',best:false,fb:'نجاح المشروع نجاح للجميع، والتعاون يجعل العمل أفضل.'},
+     {t:'أعرض عليها المساعدة وأشرح لها',best:true,fb:'أحسنتِ! التعاون على الخير يقوّي الفريق ويُسعد الجميع.'},
+     {t:'أخبر المعلمة أنها لم تعمل',best:false,fb:'قد نحتاج المعلمة أحيانًا، لكن المساعدة أولًا تصنع فرقًا أكبر.'}],
+   ref:'﴿وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ﴾ [المائدة: ٢]',
+   step:'هذا الأسبوع: قدّمي مساعدة في عمل جماعي أو في ترتيب الفصل.'},
+  {id:'s6',week:2,value:'الكلمة الطيبة',title:'تعليق جارح',
+   text:'في مجموعة الفصل، كتبت زميلة تعليقًا ساخرًا على رسمة زميلة أخرى. كيف ستردّين؟',
+   options:[
+     {t:'أضحك وأضيف تعليقًا مشابهًا',best:false,fb:'المشاركة في السخرية تزيد الأذى، والكلمة تبقى أثرها طويلًا.'},
+     {t:'أكتب تعليقًا لطيفًا عن الرسمة',best:true,fb:'رائع! الكلمة الطيبة تخفف الأذى وتُشجع صاحبة الرسمة.'},
+     {t:'أتجاهل الموضوع تمامًا',best:false,fb:'التجاهل لا يؤذي، لكن كلمة طيبة منكِ قد تغيّر يوم زميلتك.'}],
+   ref:'قال النبي ﷺ: «والكلمة الطيبة صدقة» [متفق عليه]',
+   step:'هذا الأسبوع: اكتبي أو قولي كلمة تشجيع صادقة لثلاث زميلات.'}
+];
+
+/* ---------- Storage ---------- */
+const KEY = 'mawaqif_qiyam_v1';
+function load(){
+  try{ const d = JSON.parse(localStorage.getItem(KEY)); if(d && d.situations) return d; }catch(e){}
+  return {settings:{pin:'1234',week:1},situations:DEFAULT_SITUATIONS,students:{},current:null};
+}
+let DB = load();
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(DB)); }catch(e){ toast('تعذّر الحفظ على هذا الجهاز'); } }
+
+/* ---------- Helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num = n => Number(n).toLocaleString('ar-EG');
+const today = () => new Date().toLocaleDateString('en-CA');
+let toastTimer;
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('show'),2600); }
+function me(){ return DB.students[DB.current]; }
+function newStudent(name, cls){ return {name, cls, answers:{}, values:{}, challenge:null, completed:0, completedValues:[], points:0}; }
+
+/* ---------- Login ---------- */
+$('#loginForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const name = $('#nameIn').value.trim(); const cls = $('#classIn').value.trim();
+  if(!name) return;
+  const id = (cls ? cls+'|' : '') + name;
+  if(!DB.students[id]) DB.students[id] = newStudent(name, cls);
+  DB.current = id; save(); start();
+});
+$('#logoutBtn').addEventListener('click', ()=>{ DB.current=null; save(); $('#nameIn').value=''; $('#classIn').value=''; showLogin(); });
+
+function showLogin(){ $('#app').classList.add('hidden'); $('#login').classList.remove('hidden'); }
+function start(){
+  if(!DB.current || !me()){ showLogin(); return; }
+  $('#login').classList.add('hidden'); $('#app').classList.remove('hidden');
+  $('#whoName').textContent = me().name;
+  go(currentTab);
+}
+
+/* ---------- Tabs ---------- */
+let currentTab = 'situations';
+document.querySelectorAll('nav.tabs button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.tab)));
+function go(tab){
+  currentTab = tab;
+  document.querySelectorAll('nav.tabs button').forEach(b=>{ if(b.dataset.tab===tab) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+  ['situations','challenge','impact','class','teacher'].forEach(v=>$('#v-'+v).classList.toggle('hidden', v!==tab));
+  ({situations:renderSituations,challenge:renderChallenge,impact:renderImpact,class:renderClass,teacher:renderTeacher})[tab]();
+  window.scrollTo({top:0});
+}
+
+/* ---------- 1+2: Situations ---------- */
+let showAll = false;
+function renderSituations(){
+  const s = me(); const w = DB.settings.week;
+  const list = DB.situations.filter(x => showAll ? true : Number(x.week)===Number(w));
+  const done = DB.situations.filter(x=>Number(x.week)===Number(w) && s.answers[x.id]!==undefined).length;
+  const total = DB.situations.filter(x=>Number(x.week)===Number(w)).length;
+  let h = `<h2>مواقف الأسبوع ${num(w)}</h2><p class="sub">عيشي الموقف، ثم اختاري قرارك. أنجزتِ ${num(done)} من ${num(total)}.</p>
+  <div class="toggle-row" role="group" aria-label="عرض المواقف">
+    <button type="button" data-all="0" aria-pressed="${!showAll}">هذا الأسبوع</button>
+    <button type="button" data-all="1" aria-pressed="${showAll}">كل المواقف</button>
+  </div>`;
+  if(!list.length) h += `<div class="card empty">لا توجد مواقف لهذا الأسبوع بعد. ستضيفها معلمتك قريبًا.</div>`;
+  list.forEach(x=>{
+    const picked = s.answers[x.id];
+    h += `<article class="card" id="card-${esc(x.id)}">
+      <span class="chip">${esc(x.value)}</span> ${showAll?`<span class="chip gold">الأسبوع ${num(x.week)}</span>`:''}
+      <h3 class="sit-title">${esc(x.title)}</h3>
+      <p class="sit-text">${esc(x.text)}</p>
+      <div class="opts">${x.options.map((o,i)=>{
+        let cls='opt';
+        if(picked!==undefined){ if(o.best) cls+=' best'; else if(i===picked) cls+=' picked-wrong'; }
+        return `<button type="button" class="${cls}" data-sit="${esc(x.id)}" data-i="${i}" ${picked!==undefined?'disabled':''}>${esc(o.t)}</button>`;
+      }).join('')}</div>
+      ${picked!==undefined ? feedbackHTML(x, picked) : ''}
+    </article>`;
+  });
+  $('#v-situations').innerHTML = h;
+  $('#v-situations').querySelectorAll('[data-all]').forEach(b=>b.addEventListener('click',()=>{showAll=b.dataset.all==='1';renderSituations();}));
+  $('#v-situations').querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.sit, Number(b.dataset.i))));
+}
+function feedbackHTML(x, i){
+  const o = x.options[i]; const best = x.options.find(z=>z.best);
+  return `<div class="feedback">
+    <div class="verdict ${o.best?'ok':'no'}">${o.best?'قرار موفّق':'فكّري مرة أخرى'}</div>
+    <div>${esc(o.fb)}</div>
+    ${!o.best && best ? `<div style="margin-top:8px"><b>التصرف الأقرب للقيمة:</b> ${esc(best.t)}</div>`:''}
+    ${x.ref?`<p class="ref">${esc(x.ref)}</p>`:''}
+    ${x.step?`<div class="step"><b>خطوة عملية:</b><span>${esc(x.step)}</span></div>`:''}
+  </div>`;
+}
+function choose(id, i){
+  const s = me(); if(s.answers[id]!==undefined) return;
+  const x = DB.situations.find(z=>z.id===id); if(!x) return;
+  const before = earnedBadges(s).length;
+  s.answers[id] = i;
+  s.values[x.value] = (s.values[x.value]||0) + 1;
+  s.points += x.options[i].best ? 10 : 5;
+  save(); renderSituations();
+  const el = document.getElementById('card-'+id); if(el) el.scrollIntoView({behavior:'smooth',block:'center'});
+  checkNewBadge(before);
+}
+
+/* ---------- 3: Challenge ---------- */
+let pickedValue = null;
+function renderChallenge(){
+  const s = me(); const c = s.challenge; let h = `<h2>تحدي التطبيق</h2>`;
+  if(!c){
+    h += `<p class="sub">اختاري قيمة واحدة تطبقينها هذا الأسبوع، وسجّلي تطبيقك ${num(CHALLENGE_DAYS)} أيام لتكملي التحدي.</p>`;
+    if(!pickedValue){
+      h += `<div class="values-grid">${VALUE_NAMES.map(v=>`<button type="button" class="val-card" data-v="${esc(v)}"><b>${esc(v)}</b><span>${esc(VALUES[v].actions[0])}</span></button>`).join('')}</div>`;
+    } else {
+      h += `<div class="card"><span class="chip">${esc(pickedValue)}</span><h3 class="sit-title">اختاري خطوتك العملية</h3>
+        <div class="opts">${VALUES[pickedValue].actions.map((a,i)=>`<button type="button" class="opt" data-act="${i}">${esc(a)}</button>`).join('')}</div>
+        <div style="margin-top:14px"><button type="button" class="btn ghost small" id="backVals">رجوع للقيم</button></div></div>`;
+    }
+  } else {
+    const n = c.days.length; const doneToday = c.days.includes(today());
+    h += `<p class="sub">تحدّيكِ الحالي، استمري حتى تكمليه.</p>
+    <div class="card">
+      <span class="chip">${esc(c.value)}</span>
+      <h3 class="sit-title">${esc(c.action)}</h3>
+      <div class="days">${Array.from({length:CHALLENGE_DAYS},(_,i)=>`<div class="day ${i<n?'done':''}" aria-label="اليوم ${num(i+1)} ${i<n?'مكتمل':''}">${num(i+1)}</div>`).join('')}</div>
+      <div class="progress" aria-hidden="true"><i style="width:${n/CHALLENGE_DAYS*100}%"></i></div>
+      <p class="sub" style="margin-top:10px">${num(n)} من ${num(CHALLENGE_DAYS)} أيام</p>
+      <div class="row-actions">
+        <button type="button" class="btn" id="logDay" ${doneToday?'disabled':''}>${doneToday?'سجّلتِ تطبيق اليوم، أحسنتِ':'طبّقتُ القيمة اليوم'}</button>
+        <button type="button" class="btn ghost small" id="cancelCh">تغيير التحدي</button>
+      </div>
+    </div>`;
+  }
+  if(s.completed) h += `<div class="card"><b>تحديات أكملتِها:</b> ${num(s.completed)} — ${s.completedValues.map(esc).join('، ')}</div>`;
+  $('#v-challenge').innerHTML = h;
+  $('#v-challenge').querySelectorAll('[data-v]').forEach(b=>b.addEventListener('click',()=>{pickedValue=b.dataset.v;renderChallenge();}));
+  $('#v-challenge').querySelectorAll('[data-act]').forEach(b=>b.addEventListener('click',()=>{
+    s.challenge = {value:pickedValue, action:VALUES[pickedValue].actions[Number(b.dataset.act)], days:[], start:today()};
+    pickedValue=null; save(); toast('بدأ تحدّيكِ، بالتوفيق!'); renderChallenge();
+  }));
+  const back = $('#backVals'); if(back) back.addEventListener('click',()=>{pickedValue=null;renderChallenge();});
+  const log = $('#logDay'); if(log) log.addEventListener('click',logDay);
+  const cancel = $('#cancelCh'); if(cancel) cancel.addEventListener('click',()=>{ if(confirm('هل تريدين إلغاء التحدي الحالي واختيار غيره؟')){ s.challenge=null; save(); renderChallenge(); }});
+}
+function logDay(){
+  const s = me(); const c = s.challenge; if(!c || c.days.includes(today())) return;
+  const before = earnedBadges(s).length;
+  c.days.push(today());
+  s.values[c.value] = (s.values[c.value]||0) + 1;
+  s.points += 5;
+  if(c.days.length >= CHALLENGE_DAYS){
+    s.completed += 1; s.completedValues.push(c.value); s.points += 20; s.challenge = null;
+    save(); toast('أكملتِ التحدي! حصلتِ على وسام جديد'); renderChallenge(); checkNewBadge(before, true); return;
+  }
+  save(); toast('أحسنتِ! سُجّل تطبيقك اليوم'); renderChallenge(); checkNewBadge(before);
+}
+
+/* ---------- 4: Impact & badges ---------- */
+const BADGES = [
+  {id:'first', name:'الخطوة الأولى', desc:'أول موقف', test:s=>Object.keys(s.answers).length>=1},
+  {id:'five',  name:'صانعة قرار',    desc:'٥ مواقف', test:s=>Object.keys(s.answers).length>=5},
+  {id:'wise',  name:'حكيمة المواقف', desc:'٥ قرارات موفّقة', test:s=>bestCount(s)>=5},
+  {id:'ch1',   name:'أثر يبقى',      desc:'أول تحدٍّ مكتمل', test:s=>s.completed>=1},
+  {id:'ch3',   name:'سفيرة القيم',   desc:'٣ تحديات', test:s=>s.completed>=3},
+  {id:'all',   name:'شاملة القيم',   desc:'تدربت على ٦ قيم', test:s=>VALUE_NAMES.every(v=>(s.values[v]||0)>0)}
+];
+function bestCount(s){ return Object.entries(s.answers).filter(([id,i])=>{const x=DB.situations.find(z=>z.id===id);return x && x.options[i] && x.options[i].best;}).length; }
+function earnedBadges(s){ return BADGES.filter(b=>b.test(s)); }
+function checkNewBadge(before, silent){
+  const now = earnedBadges(me());
+  if(now.length > before && !silent) setTimeout(()=>toast('وسام جديد: '+now[now.length-1].name),900);
+}
+const MEDAL = `<svg width="30" height="30" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 120 C70 100 50 80 57 60 C64 42 88 40 100 58 Z" fill="#CDEBD9"/><path d="M100 120 C130 100 150 80 143 60 C136 42 112 40 100 58 Z" fill="#F2FAF5"/><path d="M100 120 L100 150" stroke="#CDEBD9" stroke-width="10" stroke-linecap="round"/><path d="M60 156 Q100 142 140 156" fill="none" stroke="#E8B65A" stroke-width="10" stroke-linecap="round"/></svg>`;
+const MEDAL_OFF = `<svg width="30" height="30" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 120 C70 100 50 80 57 60 C64 42 88 40 100 58 Z M100 120 C130 100 150 80 143 60 C136 42 112 40 100 58 Z" fill="none" stroke="#B9B3A4" stroke-width="8"/></svg>`;
+function renderImpact(){
+  const s = me(); const earned = earnedBadges(s).map(b=>b.id);
+  const max = Math.max(1, ...VALUE_NAMES.map(v=>s.values[v]||0));
+  $('#v-impact').innerHTML = `<h2>سجل الأثر</h2><p class="sub">أثرك يُسجَّل بمشاركتك فقط، دون الحاجة لكتابة أي موقف شخصي.</p>
+  <div class="stats">
+    <div class="stat"><b>${num(Object.keys(s.answers).length)}</b><span>موقف</span></div>
+    <div class="stat"><b>${num(s.completed)}</b><span>تحدٍّ مكتمل</span></div>
+    <div class="stat"><b>${num(s.points)}</b><span>نقطة</span></div>
+  </div>
+  <div class="card"><h3 class="sit-title" style="margin-top:0">أوسمتي (${num(earned.length)} من ${num(BADGES.length)})</h3>
+    <div class="badges">${BADGES.map(b=>`<div class="badge ${earned.includes(b.id)?'on':''}"><div class="medal">${earned.includes(b.id)?MEDAL:MEDAL_OFF}</div><b>${esc(b.name)}</b><span>${esc(b.desc)}</span></div>`).join('')}</div>
+  </div>
+  <div class="card"><h3 class="sit-title" style="margin-top:0">القيم التي تدربتِ عليها</h3>
+    <div class="bars">${VALUE_NAMES.map(v=>`<div class="bar-row"><span>${esc(v)}</span><div class="bar"><i style="width:${(s.values[v]||0)/max*100}%"></i></div><span>${num(s.values[v]||0)}</span></div>`).join('')}</div>
+  </div>`;
+}
+
+/* ---------- Class board ---------- */
+function renderClass(){
+  const studs = Object.values(DB.students);
+  const totals = {}; VALUE_NAMES.forEach(v=>totals[v]=0);
+  let answers=0, completed=0, badges=0;
+  studs.forEach(s=>{ VALUE_NAMES.forEach(v=>totals[v]+=s.values[v]||0); answers+=Object.keys(s.answers).length; completed+=s.completed; badges+=earnedBadges(s).length; });
+  const sorted = VALUE_NAMES.slice().sort((a,b)=>totals[b]-totals[a]);
+  const max = Math.max(1, ...Object.values(totals));
+  const ranked = studs.slice().sort((a,b)=>b.points-a.points);
+  $('#v-class').innerHTML = `<h2>لوحة إنجازات الفصل</h2><p class="sub">إنجاز جماعي لكل الطالبات المسجّلات على هذا الجهاز.</p>
+  <div class="stats">
+    <div class="stat"><b>${num(answers)}</b><span>موقف عاشته الطالبات</span></div>
+    <div class="stat"><b>${num(completed)}</b><span>تحدٍّ مكتمل</span></div>
+    <div class="stat"><b>${num(badges)}</b><span>وسام</span></div>
+  </div>
+  <div class="card"><h3 class="sit-title" style="margin-top:0">أكثر القيم التي جرى التدرب عليها</h3>
+    <div class="bars">${sorted.map((v,i)=>`<div class="bar-row ${i===0&&totals[v]>0?'top':''}"><span>${esc(v)}</span><div class="bar"><i style="width:${totals[v]/max*100}%"></i></div><span>${num(totals[v])}</span></div>`).join('')}</div>
+    ${totals[sorted[0]]>0?`<p class="sub" style="margin:14px 0 0">القيمة الأكثر تدربًا: <b style="color:var(--green)">${esc(sorted[0])}</b>، والأقل: <b>${esc(sorted[sorted.length-1])}</b> وتحتاج مزيدًا من المواقف.</p>`:''}
+  </div>
+  <div class="card"><h3 class="sit-title" style="margin-top:0">إنجازات الطالبات</h3>
+    ${ranked.length?`<div class="table-box"><table><thead><tr><th>الطالبة</th><th>الفصل</th><th>مواقف</th><th>تحديات</th><th>أوسمة</th><th>نقاط</th></tr></thead><tbody>
+    ${ranked.map(s=>`<tr><td>${esc(s.name)}</td><td>${esc(s.cls||'—')}</td><td>${num(Object.keys(s.answers).length)}</td><td>${num(s.completed)}</td><td>${num(earnedBadges(s).length)}</td><td>${num(s.points)}</td></tr>`).join('')}
+    </tbody></table></div>`:'<p class="empty">لا توجد مشاركات بعد.</p>'}
+  </div>`;
+}
+
+/* ---------- Teacher panel ---------- */
+let teacherOpen = false;
+function renderTeacher(){
+  const v = $('#v-teacher');
+  if(!teacherOpen){
+    v.innerHTML = `<h2>لوحة المعلمة</h2><p class="sub">أدخلي الرمز للدخول. الرمز الافتراضي ١٢٣٤، ويمكنك تغييره من داخل اللوحة.</p>
+    <form class="card" id="pinForm"><div class="field"><label for="pinIn">رمز الدخول</label><input id="pinIn" type="password" inputmode="numeric" autocomplete="off"></div>
+    <button class="btn" type="submit">دخول</button></form>`;
+    $('#pinForm').addEventListener('submit',e=>{e.preventDefault(); if($('#pinIn').value===DB.settings.pin){teacherOpen=true;renderTeacher();} else toast('الرمز غير صحيح');});
+    return;
+  }
+  const weeks = [...new Set(DB.situations.map(x=>Number(x.week)))].sort((a,b)=>a-b);
+  v.innerHTML = `<h2>لوحة المعلمة</h2>
+  <div class="card">
+    <h3 class="sit-title" style="margin-top:0">الأسبوع الحالي</h3>
+    <p class="sub">تظهر للطالبات مواقف هذا الأسبوع فقط في الصفحة الرئيسية.</p>
+    <div class="row-actions" style="align-items:center">
+      <button type="button" class="btn ghost small" id="wkMinus" aria-label="الأسبوع السابق">−</button>
+      <b style="font-size:20px;min-width:110px;text-align:center">الأسبوع ${num(DB.settings.week)}</b>
+      <button type="button" class="btn ghost small" id="wkPlus" aria-label="الأسبوع التالي">+</button>
+    </div>
+  </div>
+
+  <form class="card" id="sitForm">
+    <h3 class="sit-title" style="margin-top:0">إضافة موقف جديد</h3>
+    <div class="field"><label for="fWeek">الأسبوع</label><input id="fWeek" type="number" min="1" value="${DB.settings.week}" required></div>
+    <div class="field"><label for="fValue">القيمة</label><select id="fValue">${VALUE_NAMES.map(x=>`<option>${esc(x)}</option>`).join('')}</select></div>
+    <div class="field"><label for="fTitle">عنوان الموقف</label><input id="fTitle" required maxlength="60" placeholder="مثال: الاختبار الصعب"></div>
+    <div class="field"><label for="fText">الموقف</label><textarea id="fText" required placeholder="صفي الموقف وانتهي بسؤال: ماذا ستفعلين؟"></textarea></div>
+    <fieldset style="border:0;padding:0;margin:0 0 14px"><legend style="font-size:14px;font-weight:600;margin-bottom:8px">الخيارات (حدّدي التصرف الأفضل)</legend>
+      ${[0,1,2].map(i=>`<div class="opt-edit"><div class="row"><input type="text" class="oT" aria-label="الخيار ${num(i+1)}" placeholder="الخيار ${num(i+1)}" ${i<2?'required':''} style="border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;min-height:42px;background:#fff">
+      <label class="best"><input type="radio" name="bestOpt" value="${i}" ${i===0?'checked':''}> الأفضل</label></div>
+      <input type="text" class="oF" aria-label="توضيح الخيار ${num(i+1)}" placeholder="التوضيح بعد الاختيار" style="width:100%;border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;min-height:42px;background:#fff"></div>`).join('')}
+    </fieldset>
+    <div class="field"><label for="fRef">الدليل (آية أو حديث)</label><input id="fRef" placeholder="اختياري"></div>
+    <div class="field"><label for="fStep">الخطوة العملية</label><input id="fStep" placeholder="مثال: هذا الأسبوع: ..."></div>
+    <button class="btn" type="submit">إضافة الموقف</button>
+  </form>
+
+  <div class="card">
+    <h3 class="sit-title" style="margin-top:0">المواقف (${num(DB.situations.length)})</h3>
+    ${weeks.map(w=>`<p style="margin:12px 0 0;font-weight:700;color:var(--green)">الأسبوع ${num(w)}</p>`+
+      DB.situations.filter(x=>Number(x.week)===w).map(x=>`<div class="list-item"><div><b>${esc(x.title)}</b><br><small>${esc(x.value)}</small></div><button type="button" class="btn danger small" data-del="${esc(x.id)}">حذف</button></div>`).join('')).join('') || '<p class="empty">لا توجد مواقف.</p>'}
+  </div>
+
+  <div class="card">
+    <h3 class="sit-title" style="margin-top:0">الإعدادات والنسخ الاحتياطي</h3>
+    <div class="field"><label for="newPin">تغيير رمز الدخول</label><input id="newPin" type="password" inputmode="numeric" placeholder="الرمز الجديد"></div>
+    <div class="row-actions">
+      <button type="button" class="btn small" id="savePin">حفظ الرمز</button>
+      <button type="button" class="btn ghost small" id="exportBtn">تصدير نسخة احتياطية</button>
+      <label class="btn ghost small" style="cursor:pointer">استيراد نسخة<input type="file" id="importIn" accept=".json,application/json" class="hidden"></label>
+      <button type="button" class="btn danger small" id="resetStud">مسح بيانات الطالبات</button>
+      <button type="button" class="btn ghost small" id="closeT">خروج من اللوحة</button>
+    </div>
+  </div>`;
+
+  $('#wkMinus').onclick=()=>{ if(DB.settings.week>1){DB.settings.week--;save();renderTeacher();} };
+  $('#wkPlus').onclick=()=>{ DB.settings.week++;save();renderTeacher(); };
+  $('#sitForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const ts=[...v.querySelectorAll('.oT')].map(i=>i.value.trim()), fs=[...v.querySelectorAll('.oF')].map(i=>i.value.trim());
+    const best=Number(v.querySelector('input[name=bestOpt]:checked').value);
+    if(!ts[best]){ toast('الخيار المحدد كأفضل تصرف فارغ'); return; }
+    const options = ts.map((t,i)=>({t,best:i===best,fb:fs[i]||(i===best?'أحسنتِ! هذا تصرف يعبّر عن القيمة.':'فكّري في التصرف الأقرب للقيمة.')})).filter(o=>o.t);
+    DB.situations.push({id:'s'+Date.now(),week:Number($('#fWeek').value)||1,value:$('#fValue').value,title:$('#fTitle').value.trim(),text:$('#fText').value.trim(),options,ref:$('#fRef').value.trim(),step:$('#fStep').value.trim()});
+    save(); toast('أُضيف الموقف'); renderTeacher();
+  });
+  v.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click',()=>{ if(confirm('حذف هذا الموقف؟')){ DB.situations=DB.situations.filter(x=>x.id!==b.dataset.del); save(); renderTeacher(); }}));
+  $('#savePin').onclick=()=>{ const p=$('#newPin').value.trim(); if(p.length<4){toast('الرمز ٤ أرقام على الأقل');return;} DB.settings.pin=p; save(); toast('حُفظ الرمز الجديد'); $('#newPin').value=''; };
+  $('#exportBtn').onclick=()=>{ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(DB,null,2)],{type:'application/json'})); a.download='mawaqif-backup-'+today()+'.json'; a.click(); };
+  $('#importIn').onchange=e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ const d=JSON.parse(r.result); if(!d.situations) throw 0; d.current=DB.current; DB=d; save(); toast('تم استيراد النسخة'); renderTeacher(); }catch(err){ toast('الملف غير صالح'); } }; r.readAsText(f); };
+  $('#resetStud').onclick=()=>{ if(confirm('سيتم مسح كل مشاركات الطالبات وأوسمتهن على هذا الجهاز. هل أنتِ متأكدة؟')){ DB.students={}; DB.current=null; save(); teacherOpen=false; showLogin(); } };
+  $('#closeT').onclick=()=>{ teacherOpen=false; go('situations'); };
+}
+
+start();
+})();
+</script>
+</body>
+</html>
